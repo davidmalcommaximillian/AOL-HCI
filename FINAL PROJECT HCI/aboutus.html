@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutUsPage</title>
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <div class="logo-container">
+                <a href="homepage.html"><img src="Image/Logo JCC2.png" alt=""></a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="pricelist.html">Price List</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+                <div class="close-btn" id="closeBtn">&times;</div>
+            </div>
+        </nav>
+
+
+        <div class="text-box">
+            <h1>About Us</h1>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="history">
+            <img src="Image/stdaiongbk6.png" alt="">
+            <div class="history-text">
+                <h2>History</h2>
+                <p>The Jockey's Conference Center (JCC) at Gelora Bung Karno
+                    Stadium holds a prestigious history as a versatile venue
+                    for national and international events. With top-notch
+                    facilities, it has successfully hosted important conferences,
+                    exhibitions, fairs, indoor sports competitions, and musical
+                    concerts. Situated at the heart of Gelora Bung Karno Stadium,
+                    the JCC remains a symbol of Indonesia's commitment to hosting
+                    remarkable events that bring together diverse industries and
+                    cultural experiences.</p>
+                <button type="button">Details</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="certificate">
+        <h2>Certificate of Excellence</h2>
+        <p>This is to certify that the Jockey`s Conference Center (JCC) has been recognized
+            for its exceptional services and outstanding contributions to the event industry.
+            This certificate is a testament to the JCC's unwavering dedication to providing
+            exceptional event experiences, contributing to the growth and advancement of the event industry.
+            It is with great honor that we recognize the Jockey's Conference Center for its
+            outstanding achievements and present this Certificate of Excellence as a mark of distinction.</p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <img src="Image/Logo JCC2.png" alt="">
+            <p>Main Office : Gelora Bung Karno Stadium</p>
+            <ul class="social">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 JCC. designed by <span>David M M</span></p>
+        </div>
+    </footer>
+
+    <!-- Javascript Navbar Responsive -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        const closeBtn = document.getElementById('closeBtn');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+            hamburger.classList.toggle('open');
+            closeBtn.style.display = 'block';
+        });
+
+        closeBtn.addEventListener('click', () => {
+            navLinks.classList.remove('show');
+            hamburger.classList.remove('open');
+            closeBtn.style.display = 'none';
+        });
+    </script>
+
+</body>
+
+</html>

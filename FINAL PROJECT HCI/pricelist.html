@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PriceListPage</title>
+    <link rel="stylesheet" href="pricelist.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <div class="logo-container">
+                <a href="homepage.html"><img src="Image/Logo JCC2.png" alt=""></a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="pricelist.html">Price List</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+                <div class="close-btn" id="closeBtn">&times;</div>
+            </div>
+        </nav>
+
+        <section class="pricing">
+            <div class="card-wrapper">
+                <div class="card-header">
+                    <h2>Packet A</h2>
+                </div>
+                <div class="card-detail">
+                    <p><span class="fa fa-check check"></span><b> </b>Event space</p>
+                    <p><span class="fa fa-check check"></span><b> </b>Basic audio system</p>
+                    <p><span class="fa fa-times nocheck"></span><b> </b>Lounge area</p>
+                    <p><span class="fa fa-times nocheck"></span><b> </b>VIP Room</p>
+                </div>
+                <div class="card-price">
+                    <p><sup>IDR </sup>50M</p>
+                </div>
+                <button class="card-button">I Want It</button>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="card-header">
+                    <h2>Packet B</h2>
+                </div>
+                <div class="card-detail">
+                    <p><span class="fa fa-check check"></span><b> </b>Event Space</p>
+                    <p><span class="fa fa-check check"></span><b> </b>Upgrade Audio System</p>
+                    <p><span class="fa fa-check check"></span><b> </b>Lounge area</p>
+                    <p><span class="fa fa-times nocheck"></span><b> </b>VIP Room</p>
+                </div>
+                <div class="card-price">
+                    <p><sup>IDR </sup>79M</p>
+                </div>
+                <button class="card-button">I Want It</button>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="card-header">
+                    <h2>Packet C</h2>
+                </div>
+                <div class="card-detail">
+                    <p><span class="fa fa-check check"></span><b> </b>Luxurious Event Space</p>
+                    <p><span class="fa fa-check check"></span><b> </b>Advanced Event equipment.</p>
+                    <p><span class="fa fa-check check"></span><b> </b>Lounge area</p>
+                    <p><span class="fa fa-check check"></span><b> </b>VIP Room</p>
+                </div>
+                <div class="card-price">
+                    <p><sup>IDR </sup>100M</p>
+                </div>
+                <button class="card-button">I Want It</button>
+            </div>
+        </section>
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <img src="Image/Logo JCC2.png" alt="">
+            <p>Main Office : Gelora Bung Karno Stadium</p>
+            <ul class="social">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 JCC. designed by <span>David M M</span></p>
+        </div>
+    </footer>
+
+    <!-- Javascript Navbar Responsive -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        const closeBtn = document.getElementById('closeBtn');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+            hamburger.classList.toggle('open');
+            closeBtn.style.display = 'block';
+        });
+
+        closeBtn.addEventListener('click', () => {
+            navLinks.classList.remove('show');
+            hamburger.classList.remove('open');
+            closeBtn.style.display = 'none';
+        });
+    </script>
+
+</body>
+
+</html>

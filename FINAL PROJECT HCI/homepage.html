@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <div class="logo-container">
+                <a href="homepage.html"><img src="Image/Logo JCC2.png" alt=""></a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="pricelist.html">Price List</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+                <div class="close-btn" id="closeBtn">&times;</div>
+            </div>
+        </nav>
+
+
+
+        <div class="text-box">
+            <h1>Jockey's Conference Center</h1>
+            <p>Where extraordinary events come to life. Our immersive spaces
+                and dedicated team ensure unforgettable expreiences for <br> conferences, summits, exhibitions, fairs,
+                sports events,
+                and concerts.Discover limitless possibilites and elevate you event with JCC</p>
+        </div>
+
+    </section>
+
+    <section class="Header-latestEvent">
+        <h1>Latest Upcoming Event</h1>
+        <p>Get Ready for the Spectacular! Join us at JCC(Jockey's
+            Conference Center) for Our Latest Upcoming Event.</p>
+    </section>
+
+    <section class="eventSect">
+        <div class="theEvent">
+            <img src="Image/jakartafair.png" alt="">
+            <div class="desc-event">
+                <h2>The 2023 Jakarta Fair JCC</h2>
+                <h4>June 14 - July 16 2023</h4>
+                <p>The 2023 Jakarta Fair carries the theme "United Indonesia to
+                    Support Domestic Trade and Exports to the World Market"
+                    with the sub-theme "Indonesian Citizens increase the creativity
+                    of Indonesian products and strive continuosly until success -
+                    Indonesia is Great, its people Are Prosperous."
+                    Exprience the Thrill of Jakarta Fair JCC 2023-
+                    Join the Biggest Celebration of the Year!</p>
+                <button type="button">Details</button>
+            </div>
+        </div>
+        <div class="theEvent">
+            <img src="Image/indovsargen.png" alt="">
+            <div class="desc-event">
+                <h2>Indonesia vs Argentina</h2>
+                <h4>June 19 2023</h4>
+                <p>Watch the exciting match between Indonesia and Argentina to come!
+                    Get ready for thrilling action and surprises on the court. Don't
+                    miss the rare opportunity to witness world soccer stars like
+                    Lionel Messi playing before your very eyes, making it an unmissable
+                    event for football enthusiasts worldwide. Get your tickets now
+                    and be a part of Indonesian football history!</p>
+                <button type="button">Details</button>
+            </div>
+        </div>
+        <div class="theEvent">
+            <img src="Image/coldplay.png" alt="">
+            <div class="desc-event">
+                <h2>COLDPLAY - MUSIC OF THE SPHERES</h2>
+                <h4>November 15 2023</h4>
+                <p>Get ready for an extraordinary music experience! Coldplay, a Grammy
+                    award winning band with hits like 'Viva La Vida' and 'Yellow', will
+                    be holding a grand concert in Indonesia in the near future.Join
+                    thousands of music fans at Coldplay concerts that will amaze and leave
+                    a lasting impression. Feel the energy vibrations and the power of their
+                    music directly. Get the ticket now.</p>
+                <button type="button">Details</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <img src="Image/Logo JCC2.png" alt="">
+            <p>Main Office : Gelora Bung Karno Stadium</p>
+            <ul class="social">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 JCC. designed by <span>David M M</span></p>
+        </div>
+    </footer>
+
+    <!-- Javascript Navbar Responsive -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        const closeBtn = document.getElementById('closeBtn');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+            hamburger.classList.toggle('open');
+            closeBtn.style.display = 'block';
+        });
+
+        closeBtn.addEventListener('click', () => {
+            navLinks.classList.remove('show');
+            hamburger.classList.remove('open');
+            closeBtn.style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>

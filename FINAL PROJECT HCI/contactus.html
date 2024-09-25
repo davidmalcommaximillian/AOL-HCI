@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUs</title>
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <div class="logo-container">
+                <a href="homepage.html"><img src="Image/Logo JCC2.png" alt=""></a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="pricelist.html">Price List</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+                <div class="close-btn" id="closeBtn">&times;</div>
+            </div>
+        </nav>
+
+        <div class="containers">
+            <div class="left">
+                <h3 class="heading">Get In Touch</h3>
+                <p class="text">Get The Experience You've Been Looking For</p>
+                <form action="#" id="formContactUs">
+                    <div class="inputbox">
+                        <input type="text" id="name" class="name" placeholder="Enter your name">
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" id="email" class="email" placeholder="Enter your email">
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" id="phone" class="phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" id="contactOption" class="contactOption"
+                            placeholder="Preferred contact option (email/phone)">
+                    </div>
+                    <div class="inputbox">
+                        <textarea id="message" class="message" placeholder="Enter your message..."></textarea>
+                    </div>
+                    <button type="submit" class="button">Submit</button>
+                </form>
+            </div>
+            <div class="right">
+                <div class="image">
+                    <img src="Image/contactus.png" alt="">
+                </div>
+                <div class="contact-info">
+                    <div class="infoBox">
+                        <div class="icon">
+                            <ion-icon name="location"></ion-icon>
+                        </div>
+                        <div class="text">
+                            <p>Gelora Bung Karno Stadium</p>
+                        </div>
+                    </div>
+                    <div class="infoBox">
+                        <div class="icon">
+                            <ion-icon name="call"></ion-icon>
+                        </div>
+                        <div class="text">
+                            <p>+62 888 1234 5678</p>
+                        </div>
+                    </div>
+                    <div class="infoBox">
+                        <div class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </div>
+                        <div class="text">
+                            <p>GBK@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+    </script>
+    <script nomodulesrc="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+    </script>
+
+    <footer>
+        <div class="footer-content">
+            <img src="Image/Logo JCC2.png" alt="">
+            <p>Main Office : Gelora Bung Karno Stadium</p>
+            <ul class="social">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 JCC. designed by <span>David M M</span></p>
+        </div>
+    </footer>
+
+    <script src="contactus.js"></script>
+
+</body>
+
+</html>
